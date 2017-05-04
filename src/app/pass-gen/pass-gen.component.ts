@@ -38,7 +38,7 @@ export class PassGenComponent implements OnInit {
     this.apiTestService
       .getContacts()
       .then((testString: Object) => {
-        this.test =  JSON.stringify(testString);
+        this.test = JSON.stringify(testString);
       });
   }
 }
