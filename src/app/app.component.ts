@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PassGenComponent } from './pass-gen/pass-gen.component';
 
 @Component({
   selector: 'app-root',

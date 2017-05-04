@@ -4,17 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PassGenComponent } from './pass-gen/pass-gen.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material';
+import { PasswordService } from './password.service';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PassGenComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    ClipboardModule 
   ],
-  providers: [],
+  providers: [PasswordService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

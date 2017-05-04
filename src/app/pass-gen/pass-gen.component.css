@@ -1,0 +1,18 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.password {
+    padding: 5px;
+    margin: 0 0 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#generate-button {
+    margin: 5px;
+}
