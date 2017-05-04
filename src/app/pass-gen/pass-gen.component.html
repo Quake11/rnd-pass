@@ -1,7 +1,6 @@
 <div class="container">
     <h1 class="password" mdTooltip="Copy to clipboard" mdTooltipPosition="above" #inputTarget [ngxClipboard]="inputTarget" (click)="openSnackBar()">{{password}}</h1>
     <button color="primary" id="generate-button" md-raised-button (click)="generatePass()">Generate!</button>
-    <br/>
     <p>{{test}}</p>
 </div>
 
